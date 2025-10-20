@@ -36,7 +36,7 @@ async def main():
                 if event.type == "raw_response_event" and isinstance(event.data, ResponseTextDeltaEvent):
                     print(event.data.delta, end="", flush=True)
 
-            print()  # 🔚 print newline after output is done
+            print()  
 
         except InputGuardrailTripwireTriggered as e:
             print(f"\n🚫 Input rejected by guardrail:\n{e.tripwire_info.reasoning}\n")

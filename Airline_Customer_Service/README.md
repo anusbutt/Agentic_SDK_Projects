@@ -35,8 +35,6 @@ Task_Manager_Agent/
 ├── requirements.txt # Dependencies
 └── README.md # Documentation
 
-yaml
-Copy code
 
 ---
 
@@ -46,53 +44,52 @@ Copy code
 ```bash
 git clone https://github.com/<your-username>/Task_Manager_Agent.git
 cd Task_Manager_Agent
+
 2️⃣ Create a Virtual Environment
-bash
-Copy code
 uv venv
 uv pip install -r requirements.txt
+
+
 Or using Python directly:
 
-bash
-Copy code
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
+
 3️⃣ Run the Project
-bash
-Copy code
 uv run main.py
+
 💬 Example Usage
+
 Input
 
-python
-Copy code
 i will play indoor cricket at 7pm please add this task in to my tasks for today
+
+
 Output
 
-arduino
-Copy code
 ✅ Task added: "Play indoor cricket at 7pm"
+
+
 Another Example
 
-python
-Copy code
 show me my tasks
+
+
 Output
 
-markdown
-Copy code
 📋 Current tasks:
 1. Play indoor cricket at 7pm
 2. Call the electrician at 5pm
+
 🧱 Key Components
 Component	Description
 Agent	The task manager AI with access to tools
 Runner	Executes the agent synchronously
 Tools	Real Python functions for task operations
 Config	Handles API setup and model configuration
-
 🔧 Extendable Ideas
+
 Store tasks in an SQLite or MongoDB database
 
 Add due dates and task categories
@@ -102,7 +99,7 @@ Create a web UI using Streamlit or Next.js
 Schedule reminders with cron jobs or background workers
 
 🧑‍💻 Author
+
 Developed by: Anus Butt
 Tech Stack: Python, OpenAI Agents SDK
 License: MIT
-
